@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/icon-removebg-preview.png" />
+    <title>Tea House</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+  </head>
+  <body>
+    <!-- Banner section -->
+    <div
+      class="parent_div flex flex-col md:flex-row justify-between items-center min-h-[400px] max-w-[1200px] mx-auto mt-10 px-4 py-8"
+    >
+      <div class="left_div mb-8 md:mb-0">
+        <h1 class="text-[60px] md:text-[80px] font-bold leading-tight">
+          It's good <br />
+          tea time at The<br />
+          Tea House
+        </h1>
+        <p class="text-[16px] md:text-[18px] my-6 md:my-10 leading-relaxed">
+          Tea and Botanical Solutions Supplier Give Optimum<br />
+          Satisfaction To Your Taste Buds.
+        </p>
+        <button
+          class="w-[200px] text-lg md:text-xl h-[60px] md:h-[64px] rounded-xl bg-gradient-to-r from-[#ff0000] to-[#ff8938] text-white font-semibold hover:shadow-lg transition-all duration-300"
+        >
+          Explore More
+          <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+        </button>
+      </div>
+      <div class="right_div relative">
+        <img
+          src="./images/banner.png"
+          class="relative top-[80px] md:top-[120px]"
+          alt="Tea Banner"
+        />
+        <div
+          class="star flex items-center gap-3 w-[240px] md:w-[255px] h-[90px] md:h-[100px] rounded-lg shadow-lg absolute -bottom-32 -left-8 md:-bottom-36 md:-left-12 bg-white p-4 border border-gray-100"
+        >
+          <div class="str">
+            <i class="fas fa-star text-yellow-400 text-3xl md:text-4xl"></i>
+          </div>
+          <div class="text">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800">5.00</h1>
+            <p class="text-sm md:text-base text-gray-600">
+              Trust Pilot Ratings
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--featured product section -->
+    <section class="max-w-[1200px] mx-auto mt-[100px] px-4">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+          Our Featured Products
+        </h1>
+        <p
+          class="text-gray-600 text-base lg:text-lg leading-relaxed max-w-4xl mx-auto"
+        >
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+        </p>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Milk Tea Card -->
+        <div
+          class="featured_card bg-white border-2 border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition-shadow duration-300"
+        >
+          <div class="image-container mb-4">
+            <img
+              src="./images/tea-1.png"
+              class="w-[135px] h-[200px] mx-auto object-contain"
+              alt="Milk Tea"
+            />
+          </div>
+          <div class="text-content">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Milk Tea</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Creamer could be replaced<br />
+              by fresh Milk
+            </p>
+          </div>
+        </div>
+
+        <!-- Black Tea Card -->
+        <div
+          class="featured_card bg-white border-2 border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition-shadow duration-300"
+        >
+          <div class="image-container mb-4">
+            <img
+              src="./images/tea-2.png"
+              class="w-[135px] h-[200px] mx-auto object-contain"
+              alt="Black Tea"
+            />
+          </div>
+          <div class="text-content">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Black Tea</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Creamer could be replaced<br />
+              by fresh Milk
+            </p>
+          </div>
+        </div>
+
+        <!-- Lemon Tea Card -->
+        <div
+          class="featured_card bg-white border-2 border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition-shadow duration-300"
+        >
+          <div class="image-container mb-4">
+            <img
+              src="./images/tea-3.png"
+              class="w-[135px] h-[200px] mx-auto object-contain"
+              alt="Lemon Tea"
+            />
+          </div>
+          <div class="text-content">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Lemon Tea</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Creamer could be replaced<br />
+              by fresh Milk
+            </p>
+          </div>
+        </div>
+
+        <!-- Green Tea Card -->
+        <div
+          class="featured_card bg-white border-2 border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition-shadow duration-300"
+        >
+          <div class="image-container mb-4">
+            <img
+              src="./images/tea-4.png"
+              class="w-[135px] h-[200px] mx-auto object-contain"
+              alt="Green Tea"
+            />
+          </div>
+          <div class="text-content">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Green Tea</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Creamer could be replaced<br />
+              by fresh Milk
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Great Tea Section -->
+    <section class="max-w-[1200px] mx-auto mt-[100px] px-4">
+      <div
+        class="greattea flex flex-col lg:flex-row justify-between items-center gap-12 p-8 bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl shadow-lg"
+      >
+        <!-- Left side - Image grid -->
+        <div
+          class="img_section grid grid-cols-2 grid-rows-2 gap-4 w-full lg:w-[500px] h-[500px]"
+        >
+          <!-- Top left - Empty decorative box -->
+          <div
+            class="w-full h-[120px] bg-gradient-to-br from-red-100 to-red-200 rounded-lg opacity-60"
+          ></div>
+
+          <!-- Top right - Green tea -->
+          <div class="relative">
+            <img
+              src="./images/fresh-1.png"
+              class="w-full h-[240px] object-contain rounded-lg"
+              alt="Green Tea"
+            />
+          </div>
+
+          <!-- Bottom left - Orange tea -->
+          <div class="relative">
+            <img
+              src="./images/fresh-2.png"
+              class="w-full h-[240px] object-contain rounded-lg"
+              alt="Orange Tea"
+            />
+          </div>
+
+          <!-- Bottom right - Empty decorative box -->
+          <div
+            class="w-full h-[120px] bg-gradient-to-br from-orange-100 to-orange-200 rounded-lg opacity-60"
+          ></div>
+        </div>
+
+        <!-- Right side - Content -->
+        <div class="text_section w-full lg:w-[500px] space-y-6">
+          <h1
+            class="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight"
+          >
+            Great Tea, Freshly <br />
+            <span class="text-orange-600">Presented</span>
+          </h1>
+
+          <p class="text-gray-600 text-base leading-relaxed">
+            The meaning of gong cha is chinese is to provide the best tea to
+            emperor from all possessions. It represents the highest quality and
+            self expectation. Establishing in 2006, Gong cha had been deeply
+            appreciated by its customers because of good words of mouth and
+            unique customized service originated from Taiwan.
+          </p>
+
+          <!-- Feature 1 -->
+          <div class="feature-item">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Unique Taste</h3>
+            <p class="text-gray-600">
+              A Unique and different style from other teapots gives a luxurious
+              and minimalist impression
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-item">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              Premium Quality
+            </h3>
+            <p class="text-gray-600">
+              Premium Quality that makes tea more elegant and more durable when
+              you use it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet Our Super Clients Section -->
+    <section class="max-w-[1200px] mx-auto mt-[100px] px-4">
+      <div
+        class="super-clients bg-gradient-to-r from-orange-400 to-red-500 rounded-2xl p-8 lg:p-12 text-white relative overflow-hidden"
+      >
+        <!-- Background decorative elements -->
+        <div
+          class="absolute top-4 right-4 w-12 h-12 bg-white bg-opacity-10 rounded-full"
+        ></div>
+        <div
+          class="absolute bottom-8 left-8 w-8 h-8 bg-white bg-opacity-10 rounded-full"
+        ></div>
+
+        <!-- Content Layout -->
+        <div
+          class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8"
+        >
+          <!-- Left side - Text Content -->
+          <div class="text-content lg:w-1/2 space-y-6">
+            <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
+              Meet Our Super <br />
+              <span class="text-yellow-200">Clients</span>
+            </h2>
+
+            <p
+              class="text-white text-opacity-90 text-base lg:text-lg leading-relaxed max-w-md"
+            >
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable.
+            </p>
+
+            <button
+              class="bg-white text-orange-500 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 shadow-lg"
+            >
+              Show All
+            </button>
+          </div>
+
+          <!-- Right side - Client Testimonials -->
+          <div class="testimonials lg:w-1/2 space-y-4">
+            <!-- First Testimonial Card -->
+            <div
+              class="testimonial-card bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-6 border border-white border-opacity-30"
+            >
+              <div class="flex items-start gap-4">
+                <img
+                  src="./images/client.png"
+                  alt="Client"
+                  class="w-12 h-12 rounded-full object-cover border-2 border-white"
+                />
+                <div class="flex-1">
+                  <div class="flex items-center gap-2 mb-2">
+                    <h4 class="font-semibold text-lg">Ilham Yuda</h4>
+                    <span class="text-yellow-300 text-sm">✓</span>
+                  </div>
+                  <p class="text-sm text-white text-opacity-90 leading-relaxed">
+                    "Contrary to popular belief, is not simply random text. It
+                    has roots in a piece of classical Latin literature from 45
+                    BC, making it over 2000 years old."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Testimonial Card (partially visible) -->
+            <div
+              class="testimonial-card bg-white bg-opacity-15 backdrop-blur-sm rounded-lg p-6 border border-white border-opacity-20 ml-8"
+            >
+              <div class="flex items-start gap-4">
+                <img
+                  src="./images/client.png"
+                  alt="Client"
+                  class="w-12 h-12 rounded-full object-cover border-2 border-white opacity-80"
+                />
+                <div class="flex-1">
+                  <div class="flex items-center gap-2 mb-2">
+                    <h4 class="font-semibold text-lg opacity-80">
+                      Sarah Johnson
+                    </h4>
+                    <span class="text-yellow-300 text-sm opacity-80">✓</span>
+                  </div>
+                  <p class="text-sm text-white text-opacity-70 leading-relaxed">
+                    "Amazing tea quality and excellent customer service. The
+                    variety of flavors is incredible and each cup is a
+                    delightful experience."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third Testimonial Card (more faded) -->
+            <div
+              class="testimonial-card bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-6 border border-white border-opacity-20 ml-16"
+            >
+              <div class="flex items-start gap-4">
+                <img
+                  src="./images/client.png"
+                  alt="Client"
+                  class="w-12 h-12 rounded-full object-cover border-2 border-white opacity-60"
+                />
+                <div class="flex-1">
+                  <div class="flex items-center gap-2 mb-2">
+                    <h4 class="font-semibold text-lg opacity-60">Mike Chen</h4>
+                    <span class="text-yellow-300 text-sm opacity-60">✓</span>
+                  </div>
+                  <p class="text-sm text-white text-opacity-50 leading-relaxed">
+                    "Perfect blend of traditional and modern tea culture. Highly
+                    recommended for tea enthusiasts."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News & Events Section -->
+    <section class="max-w-[1200px] mx-auto mt-[100px] px-4 mb-[100px]">
+      <div class="news-events text-center mb-12">
+        <!-- Section Header -->
+        <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+          News & Events
+        </h2>
+        <p
+          class="text-gray-600 text-base lg:text-lg leading-relaxed max-w-3xl mx-auto"
+        >
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+        </p>
+      </div>
+
+      <!-- News Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- News Card 1 -->
+        <div
+          class="news-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+        >
+          <div class="image-container h-48 overflow-hidden">
+            <img
+              src="./images/news-1.png"
+              alt="Tea Collection News"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="card-content p-6">
+            <div class="date text-sm text-gray-500 mb-3">Feb 05, 2027</div>
+            <h3
+              class="title text-xl font-bold text-gray-800 mb-3 leading-tight"
+            >
+              Collecting 8 points for discount
+            </h3>
+            <p class="description text-gray-600 text-sm leading-relaxed mb-4">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration.
+            </p>
+            <a
+              href="#"
+              class="learn-more text-orange-500 font-semibold text-sm hover:text-orange-600 transition-colors duration-300"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- News Card 2 -->
+        <div
+          class="news-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+        >
+          <div class="image-container h-48 overflow-hidden">
+            <img
+              src="./images/news-2.png"
+              alt="Tea Discount News"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="card-content p-6">
+            <div class="date text-sm text-gray-500 mb-3">Feb 05, 2027</div>
+            <h3
+              class="title text-xl font-bold text-gray-800 mb-3 leading-tight"
+            >
+              Collecting 8 points for discount
+            </h3>
+            <p class="description text-gray-600 text-sm leading-relaxed mb-4">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration.
+            </p>
+            <a
+              href="#"
+              class="learn-more text-orange-500 font-semibold text-sm hover:text-orange-600 transition-colors duration-300"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- News Card 3 -->
+        <div
+          class="news-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+        >
+          <div class="image-container h-48 overflow-hidden">
+            <img
+              src="./images/news-3.png"
+              alt="Tea Points News"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="card-content p-6">
+            <div class="date text-sm text-gray-500 mb-3">Feb 05, 2027</div>
+            <h3
+              class="title text-xl font-bold text-gray-800 mb-3 leading-tight"
+            >
+              Collecting 8 points for discount
+            </h3>
+            <p class="description text-gray-600 text-sm leading-relaxed mb-4">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration.
+            </p>
+            <a
+              href="#"
+              class="learn-more text-orange-500 font-semibold text-sm hover:text-orange-600 transition-colors duration-300"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gradient-to-r from-red-50 to-orange-50 py-16 px-4">
+      <div class="max-w-[1200px] mx-auto">
+        <!-- Main Footer Content -->
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center min-h-[200px] space-y-8 lg:space-y-0"
+        >
+          <!-- Left side - Logo or Brand -->
+          <div class="flex-1">
+            <div class="flex items-center gap-3">
+              <img
+                src="./images/cup.png"
+                alt="Tea House Logo"
+                class="w-12 h-12"
+              />
+              <h3 class="text-2xl font-bold text-gray-800">Tea House</h3>
+            </div>
+          </div>
+
+          <!-- Center - Navigation Links (Optional) -->
+          <div class="flex-1 hidden lg:flex justify-center">
+            <nav class="flex space-x-8">
+              <a
+                href="#"
+                class="text-gray-600 hover:text-orange-500 transition-colors duration-300"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="text-gray-600 hover:text-orange-500 transition-colors duration-300"
+                >About</a
+              >
+              <a
+                href="#"
+                class="text-gray-600 hover:text-orange-500 transition-colors duration-300"
+                >Products</a
+              >
+              <a
+                href="#"
+                class="text-gray-600 hover:text-orange-500 transition-colors duration-300"
+                >News</a
+              >
+              <a
+                href="#"
+                class="text-gray-600 hover:text-orange-500 transition-colors duration-300"
+                >Contact</a
+              >
+            </nav>
+          </div>
+
+          <!-- Right side - Get Started Button -->
+          <div class="flex-1 flex justify-center lg:justify-end">
+            <button
+              class="bg-gradient-to-r from-orange-400 to-red-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-orange-500 hover:to-red-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+
+        <!-- Divider Line -->
+        <div class="border-t border-gray-300 mt-12 pt-8">
+          <!-- Bottom Footer - Copyright -->
+          <div class="text-center">
+            <p class="text-gray-500 text-sm">
+              © 2024 TeaHouse. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
