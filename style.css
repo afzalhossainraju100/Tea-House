@@ -1,18 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 .manrope_font {
-      font-family: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
-/* h1{
-      color: rgba(28, 28, 28, 1);
 
-font-family: Manrope;
-font-size: 80px;
-font-weight: 800;
-line-height: 100px;
-letter-spacing: 0px;
-text-align: left;
-/* title */
-width: 628px;
-height: 300px;
-} */
+/* Ultra-wide screen responsive utilities for 3xl breakpoint (1600px+) */
+@media (min-width: 1600px) {
+  .max-w-9xl {
+    max-width: 120rem; /* 1920px */
+  }
+
+  .rounded-4xl {
+    border-radius: 2rem;
+  }
+
+  /* Custom spacing for ultra-wide screens */
+  .space-y-12 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+  }
+
+  /* Ultra-wide text sizes */
+  .text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .text-\[10rem\] {
+    font-size: 10rem;
+  }
+}
+
+/* 
+h1{
+      color: rgba(28, 28, 28, 1);
+      font-family: Manrope;
+      font-size: 80px;
+      font-weight: 800;
+      line-height: 100px;
+      letter-spacing: 0px;
+      text-align: left;
+      width: 628px;
+      height: 300px;
+} 
+*/
